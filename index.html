@@ -30,7 +30,7 @@
       </a-entity>
       <div style="display:flex; align-items: center; justify-content: center;">
         <div style="position:absolute; width: 50%; height: 35%; background-color: white; display:none" id="modal">
-          <button onclick="fechar()">X</button>
+          <button id="fechar">X</button>
           <p id="texto"></p>
         </div>
       </div>
@@ -40,9 +40,9 @@
 
     <script>
 
-      function fechar(){
+      document.getElementById("fechar").addEventListener("click", e =>{
         document.getElementById("modal").style.display = "none";
-      }
+      })
 
       let texto = document.getElementById("texto");
       alert("Olá seja bem vindo ao nosso caça ao tesouro, comece respirando um pouco!")

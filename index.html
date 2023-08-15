@@ -28,16 +28,27 @@
       <a-entity mindar-image-target="targetIndex: 3">
         <a-plane src="./resultado.jpg" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
       </a-entity>
-    <div style="position:absolute; width: 50%; height: 25%; background-color: white;">´${texto}´</div>
+      <div style="display:flex; align-items: center; justify-content: center;">
+        <div style="position:absolute; width: 50%; height: 35%; background-color: white; display:none" id="modal">
+          <button onclick="fechar()">X</button>
+          <p id="texto"></p>
+        </div>
+      </div>
 
     </a-scene>
 
 
     <script>
-      let texto="aa"
+
+      function fechar(){
+        document.getElementById("modal").style.display = "none";
+      }
+
+      let texto = document.getElementById("texto");
       alert("Olá seja bem vindo ao nosso caça ao tesouro, comece respirando um pouco!")
       document.getElementById("pista1").addEventListener("click", e =>{
-        alert("Essa janela não deixa um clima agradável, aqui dentro está um pouco quente!")
+        texto.innerText = "Essa janela não deixa um clima agradável, está um pouco quente!";
+        document.getElementById("modal").style.display = "flex";
       })
       document.getElementById("pista2").addEventListener("click", e =>{
         alert("Esse controle podia estar todo pintado se ficasse aqui por mais tempo!")

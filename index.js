@@ -42,9 +42,11 @@ document.getElementById("hint4").addEventListener("click", e =>{
 
 document.getElementById("finished-a").addEventListener("click", e =>{
   textHint.innerText = "Parabéns! Você me encontrou!";
+  modal.style.display = "flex";
   audioWin.play();
 })      
 document.getElementById("finished-b").addEventListener("click", e =>{
   textHint.innerText = "Parabéns! Você me encontrou!";
+  modal.style.display = "flex";
   audioWin.play();
 })

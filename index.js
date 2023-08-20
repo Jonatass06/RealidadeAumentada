@@ -11,7 +11,6 @@ document.getElementById("hint").addEventListener("click", e =>{
   modal.style.display = "flex";
 })
 
-// pistas
 document.getElementById("hint1").addEventListener("click", e =>{
   textHint.innerText = "Essa janela não deixa um clima agradável, está um pouco quente!";
   modal.style.display = "flex";

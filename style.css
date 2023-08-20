@@ -6,6 +6,12 @@
     height: 25px;
 }
 
+#hintButtonDad{
+    position: absolute; 
+    right: 0;
+    top:0;
+}
+
 #modalDad{
     display:flex; 
     align-items: center; 
@@ -20,14 +26,15 @@
     background-color: white; 
     display:flex; 
     position: relative;
-    padding: 3px;
+    padding: 10px;
 }
 
 #close{
     position: absolute; 
     right: 0;
     top:0;
-    color:rgba(255, 0, 0, 0.25)
+    color:rgba(255, 0, 0, 0.25);
+    padding: 2px;
 }
 
 #textHint{

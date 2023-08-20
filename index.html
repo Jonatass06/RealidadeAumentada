@@ -7,9 +7,10 @@
   </head>
   <body>
     
-    <a-scene mindar-image="imageTargetSrc: ./archives/targets.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false" style="display: flex; align-items: center; justify-content: center;">
+    <a-scene mindar-image="imageTargetSrc: ./targets.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false" style="display: flex; align-items: center; justify-content: center;">
       <a-assets>
-        <a-asset-item id="quest" src="archives/scene.gltf"></a-asset-item>
+        <a-asset-item id="quest" src="quest/scene.gltf"></a-asset-item>
+        <a-asset-item id="penguin src="penguin/scene.gltf"></a-asset-item>
       </a-assets> 
 
       <div id="hintButtonDad">
@@ -46,10 +47,10 @@
 
       <!-- fire -->
       <a-entity mindar-image-target="targetIndex: 6">
-        <a-gltf-model id="finished-a"  scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable"></a-gltf-model>
+        <a-gltf-model id="finished-a"  scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#penguin" class="clickable"></a-gltf-model>
       </a-entity>      
       <a-entity mindar-image-target="targetIndex: 7">
-        <a-gltf-model id="finished-b"  scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable"></a-gltf-model>
+        <a-gltf-model id="finished-b"  scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#penguin" class="clickable"></a-gltf-model>
       </a-entity>
 
       <!-- modal -->

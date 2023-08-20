@@ -8,7 +8,6 @@ document.getElementById("close").addEventListener("click", e =>{
 })
 
 document.getElementById("hint").addEventListener("click", e =>{
-  document.getElementById("hint").style.color = "red"
   modal.style.display = "flex";
 })
 

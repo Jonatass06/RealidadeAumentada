@@ -3,11 +3,11 @@ const modal = document.getElementById("modal")
 let textHint = document.getElementById("textHint");
 textHint.innerText = "Olá seja bem vindo ao nosso caça ao tesouro, comece respirando um pouco!"
 
-document.getElementById("fechar").addEventListener("click", e =>{
+document.getElementById("close").addEventListener("click", e =>{
   modal.style.display = "none";
 })
 
-document.getElementById("dica").addEventListener("click", e =>{
+document.getElementById("hint").addEventListener("click", e =>{
   modal.style.display = "flex";
 })
 

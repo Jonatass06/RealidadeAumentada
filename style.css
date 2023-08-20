@@ -16,10 +16,13 @@
     background-color: white; 
     display:flex; 
     position: relative;
-    font-size: 1rem;
 }
 
 #close{
     position: absolute; 
     right: 0;
+}
+
+#textHint{
+    font-size: 1rem;
 }

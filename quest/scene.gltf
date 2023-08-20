@@ -216,10 +216,10 @@
   ],
   "images": [
     {
-      "uri": "textures/03_-_Default_baseColor.jpeg"
+      "uri": "./textures/03_-_Default_baseColor.jpeg"
     },
     {
-      "uri": "textures/03_-_Default_metallicRoughness.png"
+      "uri": "./textures/03_-_Default_metallicRoughness.png"
     }
   ],
   "materials": [

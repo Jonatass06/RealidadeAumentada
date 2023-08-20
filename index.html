@@ -5,7 +5,7 @@
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.2/dist/mindar-image-aframe.prod.js"></script>
   </head>
   <body>
-    <a-scene mindar-image="imageTargetSrc: ./targets.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false" style="display: flex; align-items: center; justify-content: center;">
+    <a-scene mindar-image="imageTargetSrc: ./arquivos/targets.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false" style="display: flex; align-items: center; justify-content: center;">
       <a-assets>
 	<!-- <img id="card" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.2/examples/image-tracking/assets/card-example/card.png" />
 	<a-asset-item id="imagem" src="https://s2-g1.glbimg.com/bPPC3dO8sfQR2b49j1EbtQSnXCM=/0x0:2000x1425/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2017/m/v/YQVolJSBKl20Lkz8Ncmw/people-eminem-trump-fran.jpg"></a-asset-item>-->
@@ -14,16 +14,16 @@
       <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;" raycaster="far: ${customFields.libVersion}; objects: .clickable"></a-camera>
 
       <a-entity mindar-image-target="targetIndex: 0">
-        <a-plane id="pista1" src="./pista1.jpg" position="0 0 0" class="clickable" height="0.552" width="1" rotation="0 0 0"></a-plane>
+        <a-plane id="pista1" src="./arquivos/quest.gltf" position="0 0 0" class="clickable" height="0.552" width="1" rotation="0 0 0"></a-plane>
       </a-entity>
       <a-entity mindar-image-target="targetIndex: 1">
-        <a-plane id="pista2" src="./pista2.jpg" position="0 0 0" class="clickable" height="0.552" width="1" rotation="0 0 0"></a-plane>
+        <a-plane id="pista2" src="./arquivos/quest.gltf" position="0 0 0" class="clickable" height="0.552" width="1" rotation="0 0 0"></a-plane>
       </a-entity>
       <a-entity mindar-image-target="targetIndex: 2">
-        <a-plane id="pista3" src="./pista3.jpg" position="0 0 0" class="clickable" height="0.552" width="1" rotation="0 0 0"></a-plane>
+        <a-plane id="pista3" src="./arquivos/quest.gltf" position="0 0 0" class="clickable" height="0.552" width="1" rotation="0 0 0"></a-plane>
       </a-entity>
       <a-entity mindar-image-target="targetIndex: 2">
-        <a-plane id="pistaFinal" src="./pistaFinal.jpg" position="0 0 0" class="clickable" height="0.552" width="1" rotation="0 0 0"></a-plane>
+        <a-plane id="pistaFinal" src="./arquivos/quest.gltf" position="0 0 0" class="clickable" height="0.552" width="1" rotation="0 0 0"></a-plane>
       </a-entity>
       <a-entity mindar-image-target="targetIndex: 3">
         <a-plane src="./resultado.jpg" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>

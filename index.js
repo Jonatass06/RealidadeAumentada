@@ -1,6 +1,7 @@
 
-const modal = document.getElementById("modal")
-let textHint = document.getElementById("textHint");
+const modal = document.getElementById("modal");
+const audioWin = new Audio("./soundWinner.mp3");
+const textHint = document.getElementById("textHint");
 textHint.innerText = "Olá seja bem vindo ao nosso caça ao tesouro, comece respirando um pouco!"
 
 document.getElementById("close").addEventListener("click", e =>{
@@ -40,10 +41,10 @@ document.getElementById("hint4").addEventListener("click", e =>{
 })
 
 document.getElementById("finished-a").addEventListener("click", e =>{
-  textHint.innerText = "Siga o caminho da água. Como o ser que sou, adoro frio, odeio o calor, o fogo.";
-  modal.style.display = "flex";
+  textHint.innerText = "Parabéns! Você me encontrou!";
+  audioWin.play();
 })      
 document.getElementById("finished-b").addEventListener("click", e =>{
-  textHint.innerText = "Siga o caminho da água. Como o ser que sou, adoro frio, odeio o calor, o fogo.";
-  modal.style.display = "flex";
+  textHint.innerText = "Parabéns! Você me encontrou!";
+  audioWin.play();
 })

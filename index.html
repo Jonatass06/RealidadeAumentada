@@ -5,6 +5,8 @@
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.2/dist/mindar-image-aframe.prod.js"></script>
   </head>
   <body>
+    <button id="dica">?</button>
+
     <a-scene mindar-image="imageTargetSrc: ./arquivos/targets.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false" style="display: flex; align-items: center; justify-content: center;">
       <a-assets>
         <a-asset-item id="quest" src="arquivos/scene.gltf"></a-asset-item>
@@ -15,23 +17,25 @@
       <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;" raycaster="far: ${customFields.libVersion}; objects: .clickable"></a-camera>
 
       <a-entity mindar-image-target="targetIndex: 0">
-        <a-gltf-model id="pista1"  scale="0.005 0.005 0.005" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable"></a-gltf-model>
+        <a-gltf-model id="pista1"  scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable"></a-gltf-model>
       </a-entity>
       <a-entity mindar-image-target="targetIndex: 1">
-        <a-gltf-model id="pista2"  scale="0.005 0.005 0.005" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable"></a-gltf-model>
+        <a-gltf-model id="pista2"  scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable"></a-gltf-model>
       </a-entity>
       <a-entity mindar-image-target="targetIndex: 2">
-        <a-gltf-model id="pista3"  scale="0.005 0.005 0.005" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable"></a-gltf-model>
+        <a-gltf-model id="pista3"  scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable"></a-gltf-model>
       </a-entity>
       <a-entity mindar-image-target="targetIndex: 2">
-        <a-gltf-model id="pistaFinal"  scale="0.005 0.005 0.005" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable"></a-gltf-model>
+        <a-gltf-model id="pistaFinal"  scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable"></a-gltf-model>
       </a-entity>
+
       <a-entity mindar-image-target="targetIndex: 3">
         <a-plane src="./resultado.jpg" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
       </a-entity>
+
       <div style="display:flex; align-items: center; justify-content: center;">
-        <div style="z-index: 999; width: 50%; height: 35%; background-color: white; display:none" id="modal">
-          <button id="fechar">X</button>
+        <div style="z-index: 999; width: 50%; height: 35%; background-color: white; display:flex" id="modal">
+          <button id="fechar" style="position: absolute;">X</button>
           <p id="texto"></p>
         </div>
       </div>
@@ -45,20 +49,29 @@
         document.getElementById("modal").style.display = "none";
       })
 
+      document.getElementById("dica").addEventListener("click", e =>{
+        document.getElementById("modal").style.display = "flex";
+      })
+
+
       let texto = document.getElementById("texto");
-      alert("Olá seja bem vindo ao nosso caça ao tesouro, comece respirando um pouco!")
+      texto.innerText = "Olá seja bem vindo ao nosso caça ao tesouro, comece respirando um pouco!"
+
       document.getElementById("pista1").addEventListener("click", e =>{
         texto.innerText = "Essa janela não deixa um clima agradável, está um pouco quente!";
         document.getElementById("modal").style.display = "flex";
       })
       document.getElementById("pista2").addEventListener("click", e =>{
-        alert("Esse controle podia estar todo pintado se ficasse aqui por mais tempo!")
+        texto.innerText = "Esse controle podia estar todo pintado se ficasse aqui por mais tempo!";
+        document.getElementById("modal").style.display = "flex";
       })
       document.getElementById("pista3").addEventListener("click", e =>{
-        alert("A tinta desses canetões só não é parea para a próxima dica!")
+        texto.innerText = "A tinta desses canetões só não é parea para a próxima dica!";
+        document.getElementById("modal").style.display = "flex";
       })
       document.getElementById("pista3").addEventListener("click", e =>{
-        alert("Tenho medo de fogo!")
+        texto.innerText = "Tenho medo de fogo!";
+        document.getElementById("modal").style.display = "flex";
       })
     </script>
 

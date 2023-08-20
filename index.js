@@ -12,38 +12,38 @@ document.getElementById("hint").addEventListener("click", e =>{
 })
 
 document.getElementById("hint1").addEventListener("click", e =>{
-  textHint.innerText = "Essa janela não deixa um clima agradável, está um pouco quente!";
+  textHint.innerText = "Procure o equilíbrio. Ajuste o conforto com as correntes de ar, nem muito frias, tampouco quentes.";
   modal.style.display = "flex";
 })
 
 document.getElementById("hint2").addEventListener("click", e =>{
-  textHint.innerText = "Esse controle podia estar todo pintado se ficasse aqui por mais tempo!";
+  textHint.innerText = "A chave está na criatividade. Cores traçam pistas invisíveis, guiando você com marcas deixadas em algo branco.";
   modal.style.display = "flex";
 })
 
 document.getElementById("hint3-a").addEventListener("click", e =>{
-  textHint.innerText = "A tinta desses canetões só não é parea para a próxima dica!";
+  textHint.innerText = "Desvende mistérios ao desfazer os traços. O poder transcende a superfície, apagando o que foi desenhado";
   modal.style.display = "flex";
 })
 document.getElementById("hint3-b").addEventListener("click", e =>{
-  textHint.innerText = "A tinta desses canetões só não é parea para a próxima dica!";
+  textHint.innerText = "Desvende mistérios ao desfazer os traços. O poder transcende a superfície, apagando o que foi desenhado";
   modal.style.display = "flex";
 })      
 document.getElementById("hint3-c").addEventListener("click", e =>{
-  textHint.innerText = "A tinta desses canetões só não é parea para a próxima dica!";
+  textHint.innerText = "Desvende mistérios ao desfazer os traços. O poder transcende a superfície, apagando o que foi desenhado";
   modal.style.display = "flex";
 })
 
 document.getElementById("hint4").addEventListener("click", e =>{
-  textHint.innerText = "Tenho medo de fogo!";
+  textHint.innerText = "Siga o caminho da água. Como o ser que sou, adoro frio, odeio o calor, o fogo.";
   modal.style.display = "flex";
 })
 
 document.getElementById("finished-a").addEventListener("click", e =>{
-  textHint.innerText = "Tenho medo de fogo!";
+  textHint.innerText = "Siga o caminho da água. Como o ser que sou, adoro frio, odeio o calor, o fogo.";
   modal.style.display = "flex";
 })      
 document.getElementById("finished-b").addEventListener("click", e =>{
-  textHint.innerText = "Tenho medo de fogo!";
+  textHint.innerText = "Siga o caminho da água. Como o ser que sou, adoro frio, odeio o calor, o fogo.";
   modal.style.display = "flex";
 })

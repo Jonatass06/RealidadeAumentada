@@ -3,112 +3,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.2/dist/mindar-image-aframe.prod.js"></script>
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <button id="dica" style="position: absolute; right: 0;">?</button>
+    <button id="hint">?</button>
 
-    <a-scene mindar-image="imageTargetSrc: ./arquivos/targets.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false" style="display: flex; align-items: center; justify-content: center;">
+    <a-scene mindar-image="imageTargetSrc: ./archives/targets.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false" style="display: flex; align-items: center; justify-content: center;">
       <a-assets>
-        <a-asset-item id="quest" src="arquivos/scene.gltf"></a-asset-item>
-	<!-- <img id="card" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.2/examples/image-tracking/assets/card-example/card.png" />
-	<a-asset-item id="imagem" src="https://s2-g1.glbimg.com/bPPC3dO8sfQR2b49j1EbtQSnXCM=/0x0:2000x1425/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2017/m/v/YQVolJSBKl20Lkz8Ncmw/people-eminem-trump-fran.jpg"></a-asset-item>-->
-      </a-assets> 
+        <a-asset-item id="quest" src="archives/scene.gltf"></a-asset-item>
+     </a-assets> 
 
       <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;" raycaster="far: ${customFields.libVersion}; objects: .clickable"></a-camera>
 
+      <!-- window -->
       <a-entity mindar-image-target="targetIndex: 0">
-        <a-gltf-model id="pista1"  scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable"></a-gltf-model>
+        <a-gltf-model id="hint1"  scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable"></a-gltf-model>
       </a-entity>
 
+      <!-- control -->
       <a-entity mindar-image-target="targetIndex: 1">
-        <a-gltf-model id="pista2"  scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable"></a-gltf-model>
+        <a-gltf-model id="hint2"  scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable"></a-gltf-model>
       </a-entity>
 
+      <!-- pilots -->
       <a-entity mindar-image-target="targetIndex: 2">
-        <a-gltf-model id="pista3a"  scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable"></a-gltf-model>
+        <a-gltf-model id="hint3-a"  scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable"></a-gltf-model>
       </a-entity>
       <a-entity mindar-image-target="targetIndex: 3">
-        <a-gltf-model id="pista3b"  scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable"></a-gltf-model>
+        <a-gltf-model id="hint3-b"  scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable"></a-gltf-model>
       </a-entity>
       <a-entity mindar-image-target="targetIndex: 4">
-        <a-gltf-model id="pista3c"  scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable"></a-gltf-model>
+        <a-gltf-model id="hint3-c"  scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable"></a-gltf-model>
       </a-entity>
 
+      <!-- eraser -->
       <a-entity mindar-image-target="targetIndex: 5">
-        <a-gltf-model id="pista4" scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable"></a-gltf-model>
+        <a-gltf-model id="hint4" scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable"></a-gltf-model>
       </a-entity>
 
+      <!-- fire -->
       <a-entity mindar-image-target="targetIndex: 6">
-        <a-gltf-model id="resultadoa"  scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable"></a-gltf-model>
+        <a-gltf-model id="finished-a"  scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable"></a-gltf-model>
       </a-entity>      
       <a-entity mindar-image-target="targetIndex: 7">
-        <a-gltf-model id="resultadob"  scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable"></a-gltf-model>
+        <a-gltf-model id="finished-b"  scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable"></a-gltf-model>
       </a-entity>
 
-      <div style="display:flex; align-items: center; justify-content: center;">
-        <div style="z-index: 999; width: 50%; height: 35%; background-color: white; display:flex; position: relative;" id="modal">
-          <button id="fechar" style="position: absolute; right: 0;">X</button>
-          <p id="texto"></p>
+      <!-- modal -->
+      <div id="modalDad">
+        <div id="modal">
+          <button id="close">X</button>
+          <p id="textHint"></p>
         </div>
       </div>
 
     </a-scene>
-
-
-    <script>
-      const modal = document.getElementById("modal")
-      let texto = document.getElementById("texto");
-      texto.innerText = "Olá seja bem vindo ao nosso caça ao tesouro, comece respirando um pouco!"
-
-      document.getElementById("fechar").addEventListener("click", e =>{
-        modal.style.display = "none";
-      })
-
-      document.getElementById("dica").addEventListener("click", e =>{
-        modal.style.display = "flex";
-      })
-
-      // pistas
-      document.getElementById("pista1").addEventListener("click", e =>{
-        texto.innerText = "Essa janela não deixa um clima agradável, está um pouco quente!";
-        modal.style.display = "flex";
-      })
-
-      document.getElementById("pista2").addEventListener("click", e =>{
-        texto.innerText = "Esse controle podia estar todo pintado se ficasse aqui por mais tempo!";
-        modal.style.display = "flex";
-      })
-
-      document.getElementById("pista3a").addEventListener("click", e =>{
-        texto.innerText = "A tinta desses canetões só não é parea para a próxima dica!";
-        modal.style.display = "flex";
-      })
-      document.getElementById("pista3b").addEventListener("click", e =>{
-        texto.innerText = "A tinta desses canetões só não é parea para a próxima dica!";
-        modal.style.display = "flex";
-      })      
-      document.getElementById("pista3c").addEventListener("click", e =>{
-        texto.innerText = "A tinta desses canetões só não é parea para a próxima dica!";
-        modal.style.display = "flex";
-      })
-
-      document.getElementById("pista4").addEventListener("click", e =>{
-        texto.innerText = "Tenho medo de fogo!";
-        modal.style.display = "flex";
-      })
-
-      document.getElementById("resultadoa").addEventListener("click", e =>{
-        texto.innerText = "Tenho medo de fogo!";
-        modal.style.display = "flex";
-      })      
-      document.getElementById("resultadob").addEventListener("click", e =>{
-        texto.innerText = "Tenho medo de fogo!";
-        modal.style.display = "flex";
-      })
-    </script>
-
-    <!-- Pegar as imagens, css, pinguim, ponto de interrogação -->
-
+    <script src="./index.js"></script>
 
   </body>
 </html>

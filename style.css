@@ -1,0 +1,25 @@
+#hint{
+    position: absolute; 
+    right: 0;
+}
+
+#modalDad{
+    display:flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+#modal{
+    z-index: 999; 
+    width: 50%; 
+    height: 35%; 
+    background-color: white; 
+    display:flex; 
+    position: relative;
+    font-size: 1rem;
+}
+
+#close{
+    position: absolute; 
+    right: 0;
+}

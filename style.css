@@ -1,6 +1,9 @@
 #hint{
     position: absolute; 
     right: 0;
+    color: yellow;
+    width: 25px;
+    height: 25px;
 }
 
 #modalDad{
@@ -11,18 +14,27 @@
 
 #modal{
     z-index: 999; 
-    width: 50%; 
-    height: 35%; 
+    width: 75%; 
+    height: 40%; 
+    border-radius: 10px;
     background-color: white; 
     display:flex; 
     position: relative;
+    padding: 3px;
 }
 
 #close{
     position: absolute; 
     right: 0;
+    top:0;
+    color:rgba(255, 0, 0, 0.25)
 }
 
 #textHint{
-    font-size: 1rem;
+    font-size: 0.5rem;
+}
+
+button{
+    background-color: none;
+    border: none;
 }

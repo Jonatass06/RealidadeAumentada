@@ -25,13 +25,13 @@
       </a-entity>
 
       <a-entity mindar-image-target="targetIndex: 2">
-        <a-gltf-model id="pista3"  scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable"></a-gltf-model>
+        <a-gltf-model id="pista3a"  scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable"></a-gltf-model>
       </a-entity>
       <a-entity mindar-image-target="targetIndex: 3">
-        <a-gltf-model id="pista3"  scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable"></a-gltf-model>
+        <a-gltf-model id="pista3b"  scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable"></a-gltf-model>
       </a-entity>
       <a-entity mindar-image-target="targetIndex: 4">
-        <a-gltf-model id="pista3"  scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable"></a-gltf-model>
+        <a-gltf-model id="pista3c"  scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable"></a-gltf-model>
       </a-entity>
 
       <a-entity mindar-image-target="targetIndex: 5">
@@ -39,14 +39,14 @@
       </a-entity>
 
       <a-entity mindar-image-target="targetIndex: 6">
-        <a-gltf-model id="resultado"  scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable"></a-gltf-model>
+        <a-gltf-model id="resultadoa"  scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable"></a-gltf-model>
       </a-entity>      
       <a-entity mindar-image-target="targetIndex: 7">
-        <a-gltf-model id="resultado"  scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable"></a-gltf-model>
+        <a-gltf-model id="resultadob"  scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable"></a-gltf-model>
       </a-entity>
 
       <div style="display:flex; align-items: center; justify-content: center;">
-        <div style="z-index: 999; width: 50%; height: 35%; background-color: white; display:flex" id="modal">
+        <div style="z-index: 999; width: 50%; height: 35%; background-color: white; display:flex; position: relative;" id="modal">
           <button id="fechar" style="position: absolute; right: 0;">X</button>
           <p id="texto"></p>
         </div>
@@ -73,15 +73,35 @@
         texto.innerText = "Essa janela não deixa um clima agradável, está um pouco quente!";
         modal.style.display = "flex";
       })
+
       document.getElementById("pista2").addEventListener("click", e =>{
         texto.innerText = "Esse controle podia estar todo pintado se ficasse aqui por mais tempo!";
         modal.style.display = "flex";
       })
-      document.getElementById("pista3").addEventListener("click", e =>{
+
+      document.getElementById("pista3a").addEventListener("click", e =>{
         texto.innerText = "A tinta desses canetões só não é parea para a próxima dica!";
         modal.style.display = "flex";
       })
+      document.getElementById("pista3b").addEventListener("click", e =>{
+        texto.innerText = "A tinta desses canetões só não é parea para a próxima dica!";
+        modal.style.display = "flex";
+      })      
+      document.getElementById("pista3c").addEventListener("click", e =>{
+        texto.innerText = "A tinta desses canetões só não é parea para a próxima dica!";
+        modal.style.display = "flex";
+      })
+
       document.getElementById("pista4").addEventListener("click", e =>{
+        texto.innerText = "Tenho medo de fogo!";
+        modal.style.display = "flex";
+      })
+
+      document.getElementById("resultadoa").addEventListener("click", e =>{
+        texto.innerText = "Tenho medo de fogo!";
+        modal.style.display = "flex";
+      })      
+      document.getElementById("resultadob").addEventListener("click", e =>{
         texto.innerText = "Tenho medo de fogo!";
         modal.style.display = "flex";
       })

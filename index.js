@@ -3,6 +3,7 @@ const modal = document.getElementById("modal");
 const audioWin = new Audio("./soundWinner.mp3");
 const textHint = document.getElementById("textHint");
 const aEntities = document.getElementById("aEntities");
+aEntities.innerHTML += '<a-entity id="control" mindar-image-target="targetIndex: 1" class="hidden"><a-gltf-model id="hint2"  scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable" animation-mixer></a-entity>';
 console.log(aEntities);
 textHint.innerText = "Olá seja bem vindo ao nosso caça ao tesouro, comece respirando um pouco!"
 
@@ -17,7 +18,6 @@ document.getElementById("hint").addEventListener("click", e => {
 document.getElementById("hint1").addEventListener("click", e => {
   textHint.innerText = "Procure o equilíbrio. Ajuste o conforto com as correntes de ar, nem muito frias, tampouco quentes.";
   modal.style.display = "flex";
-  aEntities.innerHTML += '<a-entity id="control" mindar-image-target="targetIndex: 1" class="hidden"><a-gltf-model id="hint2"  scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable" animation-mixer></a-entity>';
 })
 
 document.getElementById("hint2").addEventListener("click", e => {

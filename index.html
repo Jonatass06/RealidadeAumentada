@@ -28,17 +28,7 @@
       <a-gltf-model id="hint1" scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="quest/scene.gltf"
         class="clickable" animation-mixer>
     </a-entity>
-
-    <!-- modal -->
-    <div id="modalDad">
-      <div id="modal">
-        <button id="close">X</button>
-        <p id="textHint"></p>
-      </div>
-    </div>
   </a-scene>
-
-
 
   <a-scene mindar-image="imageTargetSrc: ./targets.mind; autoStart: false;" color-space="sRGB"
     renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false"
@@ -49,13 +39,19 @@
 
     <!-- control -->
     <a-entity id="control"  midar-image-target = "targetIndex: 1">
-      <a-gltf-model id="hint2" scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest"
+      <a-gltf-model id="hint2" scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="quest/scene.gltf"
         class="clickable" animation-mixer>
     </a-entity>
 
   </a-scene>
 
-
+    <!-- modal -->
+    <div id="modalDad">
+      <div id="modal">
+        <button id="close">X</button>
+        <p id="textHint"></p>
+      </div>
+    </div>
 
   <script src="./index.js"></script>
 

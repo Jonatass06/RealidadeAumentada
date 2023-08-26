@@ -22,12 +22,13 @@
 
 
 
-      <!-- window -->
-      <a-entity  visible="false" mindar-image-target="targetIndex: 0">
-      <a-circle color="#CCC" radius="20" visible="false"></a-circle>
-
-        <a-gltf-model id="hint1" scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable" animation-mixer>
+      <a-entity>
+        <a-entity mindar-image-target="targetIndex: 0">
+          <a-gltf-model id="hint1" scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable" animation-mixer>
+        </a-entity>
       </a-entity>
+      <!-- window -->
+
 
       <!-- control -->
       <a-entity id="control" mindar-image-target="targetIndex: 1" class="hidden">

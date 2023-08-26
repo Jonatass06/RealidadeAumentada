@@ -6,10 +6,6 @@
     z-index: 999;
 }
 
-.hidden{
-    display:none;
-}
-
 #hintButtonDad{
     position: absolute; 
     right: 0;

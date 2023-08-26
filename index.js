@@ -4,7 +4,7 @@ const audioWin = new Audio("./soundWinner.mp3");
 const textHint = document.getElementById("textHint");
 const aEntities = document.getElementById("aEntities");
 textHint.innerText = "Olá seja bem vindo ao nosso caça ao tesouro, comece respirando um pouco!"
-
+console.log(aEntities.lastChild)
 function closeModal(element){
     modal.style.display = "none";
 }

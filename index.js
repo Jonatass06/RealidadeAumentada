@@ -3,7 +3,7 @@ const modal = document.getElementById("modal");
 const audioWin = new Audio("./soundWinner.mp3");
 const textHint = document.getElementById("textHint");
 
-const control = document.createElement("a-entity");
+const control = document.createElement("div");
 control.innerHTML = `<a-entity id="control" mindar-image-target="targetIndex: 1" class="hidden">
 <a-gltf-model id="hint2"  scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable" animation-mixer>
 </a-entity>`;

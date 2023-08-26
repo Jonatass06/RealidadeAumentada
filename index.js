@@ -2,10 +2,6 @@
 const modal = document.getElementById("modal");
 const audioWin = new Audio("./soundWinner.mp3");
 const textHint = document.getElementById("textHint");
-const scene2 = document.getElementById("cena2");
-const scene3 = document.getElementById("cena3");
-const scene4 = document.getElementById("cena4");
-const scene5 = document.getElementById("cena5");
 textHint.innerText = "Olá seja bem vindo ao nosso caça ao tesouro, comece respirando um pouco!"
 
 document.getElementById("close").addEventListener("click", e =>{
@@ -19,7 +15,7 @@ document.getElementById("hint").addEventListener("click", e =>{
 document.getElementById("hint1").addEventListener("click", e =>{
   textHint.innerText = "Procure o equilíbrio. Ajuste o conforto com as correntes de ar, nem muito frias, tampouco quentes.";
   modal.style.display = "flex";
-  scene2.systems["mindar-image-system"].start();
+  document.getElementById("control").classList.remove("hidden")
 })
 
 document.getElementById("hint2").addEventListener("click", e =>{

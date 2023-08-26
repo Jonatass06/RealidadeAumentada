@@ -20,7 +20,6 @@ document.getElementById("hint1").addEventListener("click", e =>{
   textHint.innerText = "Procure o equilíbrio. Ajuste o conforto com as correntes de ar, nem muito frias, tampouco quentes.";
   modal.style.display = "flex";
   scene2.systems["mindar-image-system"].start();
-  document.getElementById("control").mindarImageTarget = "targetIndex: 1"
 })
 
 document.getElementById("hint2").addEventListener("click", e =>{

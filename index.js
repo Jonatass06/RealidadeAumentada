@@ -9,7 +9,7 @@ textHint.innerText = "Olá seja bem vindo ao nosso caça ao tesouro, comece resp
 
 function closeModal(element){
     modal.style.display = "none";
-    arSystem.unpause();
+    arSystem.start();
   }
   
   document.getElementById("hint").addEventListener("click", e => {
@@ -18,9 +18,10 @@ function closeModal(element){
   
   document.getElementById("hint1").addEventListener("click", e => {
     modal.style.display = "flex";
-    textHint.innerText = "Procure o equilíbrio. Ajuste o conforto com as correntes de ar, nem muito frias, tampouco quentes.";
     aEntities.innerHTML += '<a-entity id="control" mindar-image-target="targetIndex: 1" class="hidden"><a-gltf-model id="hint2"  scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable" animation-mixer></a-entity>';
-    arSystem.pause(keepVideo = false)
+    textHint.innerText = "Procure o equilíbrio. Ajuste o conforto com as correntes de ar, nem muito frias, tampouco quentes.";
+    arSystem.stop();
+
   })
 
 document.getElementById("hint2").addEventListener("click", e => {

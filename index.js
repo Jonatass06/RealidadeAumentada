@@ -7,9 +7,11 @@ const aEntities = document.getElementById("aEntities");
 
 textHint.innerText = "Olá seja bem vindo ao nosso caça ao tesouro, comece respirando um pouco!"
 
-document.getElementById("close").addEventListener("click", e => {
-  modal.style.display = "none";
-})
+function closeModal(element){
+  element.addEventListener("click", e => {
+    modal.style.display = "none";
+  })
+}
 
 document.getElementById("hint").addEventListener("click", e => {
   modal.style.display = "flex";
@@ -20,6 +22,7 @@ document.getElementById("hint1").addEventListener("click", e => {
   textHint.innerText = "Procure o equilíbrio. Ajuste o conforto com as correntes de ar, nem muito frias, tampouco quentes.";
   aEntities.removeChild(aEntities.lastChild);
   aEntities.innerHTML += '<a-entity id="control" mindar-image-target="targetIndex: 1" class="hidden"><a-gltf-model id="hint2"  scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest" class="clickable" animation-mixer></a-entity>';
+  closeModal(modalDad)
   aEntities.appendChild(modalDad);
 })
 

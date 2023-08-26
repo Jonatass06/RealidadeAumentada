@@ -30,18 +30,25 @@
         class="clickable" animation-mixer>
     </a-entity>
 
+    <!-- modal -->
+    <div id="modalDad">
+      <div id="modal">
+        <button id="close">X</button>
+        <p id="textHint"></p>
+      </div>
+    </div>
   </a-scene>
 
   <a-scene mindar-image="imageTargetSrc: ./targets.mind; autoStart: false;" color-space="sRGB"
-  renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false"
-  device-orientation-permission-ui="enabled: false" id="cena2" auto>
-  <!-- Segunda Cena -->
-  <a-assets>
-    <a-asset-item id="quest" src="quest/scene.gltf"></a-asset-item>
-  </a-assets>
+    renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false"
+    device-orientation-permission-ui="enabled: false" id="cena2" auto>
+    <!-- Segunda Cena -->
+    <a-assets>
+      <a-asset-item id="quest" src="quest/scene.gltf"></a-asset-item>
+    </a-assets>
 
-  <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;"
-  raycaster="far: ${customFields.libVersion}; objects: .clickable"></a-camera>
+    <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;"
+      raycaster="far: ${customFields.libVersion}; objects: .clickable"></a-camera>
 
     <!-- control -->
     <a-entity id="control">
@@ -52,15 +59,15 @@
   </a-scene>
 
   <a-scene mindar-image="imageTargetSrc: ./targets.mind; autoStart: false;" color-space="sRGB"
-  renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false"
-  device-orientation-permission-ui="enabled: false" id="cena3" auto>
-  <!-- Terceira Cena -->
-  <a-assets>
-    <a-asset-item id="quest" src="quest/scene.gltf"></a-asset-item>
-  </a-assets>
+    renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false"
+    device-orientation-permission-ui="enabled: false" id="cena3" auto>
+    <!-- Terceira Cena -->
+    <a-assets>
+      <a-asset-item id="quest" src="quest/scene.gltf"></a-asset-item>
+    </a-assets>
 
-  <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;"
-  raycaster="far: ${customFields.libVersion}; objects: .clickable"></a-camera>
+    <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;"
+      raycaster="far: ${customFields.libVersion}; objects: .clickable"></a-camera>
 
     <!-- pilots -->
     <a-entity mindar-image-target="targetIndex: 2">
@@ -79,15 +86,15 @@
   </a-scene>
 
   <a-scene mindar-image="imageTargetSrc: ./targets.mind; autoStart: false;" color-space="sRGB"
-  renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false"
-  device-orientation-permission-ui="enabled: false" id="cena4" auto>
-  <!-- TQuarta Cena -->
-  <a-assets>
-    <a-asset-item id="quest" src="quest/scene.gltf"></a-asset-item>
-  </a-assets>
+    renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false"
+    device-orientation-permission-ui="enabled: false" id="cena4" auto>
+    <!-- TQuarta Cena -->
+    <a-assets>
+      <a-asset-item id="quest" src="quest/scene.gltf"></a-asset-item>
+    </a-assets>
 
-  <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;"
-  raycaster="far: ${customFields.libVersion}; objects: .clickable"></a-camera>
+    <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;"
+      raycaster="far: ${customFields.libVersion}; objects: .clickable"></a-camera>
 
     <!-- eraser -->
     <a-entity mindar-image-target="targetIndex: 5">
@@ -98,9 +105,9 @@
   </a-scene>
 
   <a-scene mindar-image="imageTargetSrc: ./targets.mind; autoStart: false;" color-space="sRGB"
-  renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false"
-  device-orientation-permission-ui="enabled: false" id="cena5" auto>
-  <!-- Quinta cena -->
+    renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false"
+    device-orientation-permission-ui="enabled: false" id="cena5" auto>
+    <!-- Quinta cena -->
     <a-assets>
       <a-asset-item id="penguin" src="penguin/scene.gltf"></a-asset-item>
     </a-assets>
@@ -119,13 +126,8 @@
     </a-entity>
   </a-scene>
 
-  <!-- modal -->
-  <div id="modalDad">
-    <div id="modal">
-      <button id="close">X</button>
-      <p id="textHint"></p>
-    </div>
-  </div>
+
+
   <script src="./index.js"></script>
 
 </body>

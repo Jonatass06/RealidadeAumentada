@@ -8,7 +8,7 @@ const cena1 = document.getElementById("cena1")
 let cena1System;
 
 cena1.addEventListener('loaded', function () {
-  cena1System = sceneEl.systems["mindar-image-system"];
+  cena1System = cena1.systems["mindar-image-system"];
 });
 
 function closeModal() {

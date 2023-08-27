@@ -4,7 +4,9 @@ const audioWin = new Audio("./soundWinner.mp3");
 const textHint = document.getElementById("textHint");
 textHint.innerText = "Olá seja bem vindo ao nosso caça ao tesouro, comece respirando um pouco!"
 
-function closeModal(element) {
+function closeModal() {
+  document.getElementById("cena1").systems["mindar-image-system"].stop()
+  document.getElementById("cena2").systems["mindar-image-system"].start()
   modal.style.display = "none";
 }
 
@@ -13,11 +15,8 @@ document.getElementById("hint").addEventListener("click", e => {
 })
 
 document.getElementById("hint1").addEventListener("click", e => {
-  alert("aaaaaa")
   modal.style.display = "flex";
   textHint.innerText = "Procure o equilíbrio. Ajuste o conforto com as correntes de ar, nem muito frias, tampouco quentes.";
-  document.getElementById("cena1").systems["mindar-image-system"].stop()
-  document.getElementById("cena2").systems["mindar-image-system"].start()
 })
 
 

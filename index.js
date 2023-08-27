@@ -18,8 +18,8 @@ document.getElementById("hint").addEventListener("click", e => {
 document.getElementById("hint1").addEventListener("click", e => {
   modal.style.display = "flex";
   textHint.innerText = "Procure o equilíbrio. Ajuste o conforto com as correntes de ar, nem muito frias, tampouco quentes.";
-  document.getElementById("cena1").systems["mindar-imagem-system"].stop()
-  document.getElementById("cena2").systems["mindar-imagem-system"].start()
+  document.getElementById("cena1").systems["mindar-image-system"].stop()
+  document.getElementById("cena2").systems["mindar-image-system"].start()
 })
 
 document.getElementById("hint1").addEventListener("click", e => {

@@ -81,9 +81,9 @@
   </a-scene>
   <script src="./index.js"></script>
 
-  <a-scene mindar-image="imageTargetSrc: ./targets.mind;" color-space="sRGB"
+  <a-scene mindar-image="imageTargetSrc: ./targets.mind; autoStart: false;" color-space="sRGB"
     renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false"
-    device-orientation-permission-ui="enabled: false" visible="false">
+    device-orientation-permission-ui="enabled: false">
     <a-assets>
       <a-asset-item id="quest" src="quest/scene.gltf"></a-asset-item>
       <a-asset-item id="penguin" src="penguin/scene.gltf"></a-asset-item>

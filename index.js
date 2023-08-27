@@ -8,8 +8,6 @@ const cena1 = document.getElementById("cena1")
 const cena1System = cena1.systems["mindar-image-system"];
 
 function closeModal() {
-  cena1System.stop()
-  document.getElementById("cena2").systems["mindar-image-system"].start()
   modal.style.display = "none";
 }
 
@@ -20,6 +18,7 @@ document.getElementById("hint").addEventListener("click", e => {
 document.getElementById("hint1").addEventListener("click", e => {
   modal.style.display = "flex";
   textHint.innerText = "Procure o equilíbrio. Ajuste o conforto com as correntes de ar, nem muito frias, tampouco quentes.";
+  cena1System.stop()
 })
 
 

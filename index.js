@@ -3,6 +3,7 @@ const modal = document.getElementById("modalDad");
 const audioWin = new Audio("./soundWinner.mp3");
 const textHint = document.getElementById("textHint");
 textHint.innerText = "Olá seja bem vindo ao nosso caça ao tesouro, comece respirando um pouco!"
+document.getElementById("cena1").systems["mindar-image-system"].start()
 
 function closeModal() {
   document.getElementById("cena1").systems["mindar-image-system"].stop()

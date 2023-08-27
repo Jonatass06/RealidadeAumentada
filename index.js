@@ -17,7 +17,7 @@ document.getElementById("hint").addEventListener("click", e => {
 
 document.getElementById("hint1").addEventListener("click", e => {
   modal.style.display = "flex";
-  alert("a")
+  alert("a");
   textHint.innerText = "Procure o equilíbrio. Ajuste o conforto com as correntes de ar, nem muito frias, tampouco quentes.";
   cena1System.stop()
 })

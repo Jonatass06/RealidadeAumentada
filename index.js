@@ -4,9 +4,15 @@ const audioWin = new Audio("./soundWinner.mp3");
 const textHint = document.getElementById("textHint");
 textHint.innerText = "Olá seja bem vindo ao nosso caça ao tesouro, comece respirando um pouco!"
 document.getElementById("cena1").systems["mindar-image-system"].start()
+const cena1 = document.getElementById("cena1")
+let cena1System;
+
+cena1.addEventListener('loaded', function () {
+  cena1System = sceneEl.systems["mindar-image-system"];
+});
 
 function closeModal() {
-  document.getElementById("cena1").systems["mindar-image-system"].stop()
+  cena1System.stop()
   document.getElementById("cena2").systems["mindar-image-system"].start()
   modal.style.display = "none";
 }

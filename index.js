@@ -5,11 +5,7 @@ const textHint = document.getElementById("textHint");
 textHint.innerText = "Olá seja bem vindo ao nosso caça ao tesouro, comece respirando um pouco!"
 document.getElementById("cena1").systems["mindar-image-system"].start()
 const cena1 = document.getElementById("cena1")
-let cena1System;
-
-cena1.addEventListener('loaded', function () {
-  cena1System = cena1.systems["mindar-image-system"];
-});
+const cena1System = cena1.systems["mindar-image-system"];
 
 function closeModal() {
   cena1System.stop()

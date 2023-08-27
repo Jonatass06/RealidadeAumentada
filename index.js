@@ -22,11 +22,6 @@ document.getElementById("hint1").addEventListener("click", e => {
   document.getElementById("cena2").systems["mindar-image-system"].start()
 })
 
-document.getElementById("hint1").addEventListener("click", e => {
-  textHint.innerText = "Procure o equilíbrio. Ajuste o conforto com as correntes de ar, nem muito frias, tampouco quentes.";
-  modal.style.display = "flex";
-  document.getElementById("control").classList.remove("hidden")
-})
 
 document.getElementById("hint2").addEventListener("click", e => {
 

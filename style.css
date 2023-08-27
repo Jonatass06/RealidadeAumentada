@@ -6,6 +6,15 @@
     z-index: 999;
 }
 
+.hidden{
+    display:none;
+}
+
+a-entity{
+    display: flex;
+    flex-direction: column;
+}
+
 #hintButtonDad{
     position: absolute; 
     right: 0;

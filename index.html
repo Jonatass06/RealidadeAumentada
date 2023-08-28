@@ -42,35 +42,39 @@
 
 
     <!-- pilots -->
-    <a-entity id="pilot1" mindar-image-target="targetIndex: 2" class="hidden" visible="false">
-      <a-gltf-model id="hint3-a" scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest"
-        class="clickable" animation-mixer>
+    <a-entity id="hint3hidden" visible="false">
+      <a-entity id="pilot1" mindar-image-target="targetIndex: 2" class="hidden" visible="false">
+        <a-gltf-model id="hint3-a" scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest"
+          class="clickable" animation-mixer>
+      </a-entity>
+      <a-entity id="pilot2" mindar-image-target="targetIndex: 3" class="hidden" visible="false">
+        <a-gltf-model id="hint3-b" scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest"
+          class="clickable" animation-mixer>
+      </a-entity>
+      <a-entity id="pilot3" mindar-image-target="targetIndex: 4" class="hidden" visible="false">
+        <a-gltf-model id="hint3-c" scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest"
+          class="clickable" animation-mixer>
+      </a-entity>
     </a-entity>
-    <a-entity id="pilot2" mindar-image-target="targetIndex: 3" class="hidden" visible="false">
-      <a-gltf-model id="hint3-b" scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest"
-        class="clickable" animation-mixer>
-    </a-entity>
-    <a-entity id="pilot3" mindar-image-target="targetIndex: 4" class="hidden" visible="false">
-      <a-gltf-model id="hint3-c" scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest"
-        class="clickable" animation-mixer>
-    </a-entity>
-    <a-asset-item id="quest" src="quest/scene.gltf"></a-asset-item>
-    </a-assets>
 
     <!-- eraser -->
-    <a-entity id="eraser" mindar-image-target="targetIndex: 5" class="hidden" visible="false">
-      <a-gltf-model id="hint4" scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest"
-        class="clickable" animation-mixer>
+    <a-entity id="hint4hidden" visible="false">
+      <a-entity id="eraser" mindar-image-target="targetIndex: 5" class="hidden" visible="false">
+        <a-gltf-model id="hint4" scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest"
+          class="clickable" animation-mixer>
+      </a-entity>
     </a-entity>
 
     <!-- fire -->
-    <a-entity id="fire1" mindar-image-target="targetIndex: 6" class="hidden" visible="false">
-      <a-gltf-model id="finished-a" scale="0.001 0.001 0.001" position="0 -0.55 0" rotation="0 0 0" src="#penguin"
-        class="clickable" animation-mixer>
-    </a-entity>
-    <a-entity id="fire2" mindar-image-target="targetIndex: 7" class="hidden" visible="false">
-      <a-gltf-model id="finished-b" scale="0.001 0.001 0.001" position="0 -0.8 0" rotation="0 0 0" src="#penguin"
-        class="clickable" animation-mixer>
+    <a-entity id="hint5hidden" visible="false">
+      <a-entity id="fire1" mindar-image-target="targetIndex: 6" class="hidden" visible="false">
+        <a-gltf-model id="finished-a" scale="0.001 0.001 0.001" position="0 -0.55 0" rotation="0 0 0" src="#penguin"
+          class="clickable" animation-mixer>
+      </a-entity>
+      <a-entity id="fire2" mindar-image-target="targetIndex: 7" class="hidden" visible="false">
+        <a-gltf-model id="finished-b" scale="0.001 0.001 0.001" position="0 -0.8 0" rotation="0 0 0" src="#penguin"
+          class="clickable" animation-mixer>
+      </a-entity>
     </a-entity>
   </a-scene>
 

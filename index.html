@@ -13,15 +13,16 @@
   <div id="hintButtonDad">
     <button id="hint">?</button>
   </div>
-  
-  <a-scene mindar-image="imageTargetSrc: ./targets.mind;" color-space="sRGB"
-  renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false"
-  device-orientation-permission-ui="enabled: false" id="cena1">
-  <a-assets>
-    <a-asset-item id="quest" src="quest/scene.gltf"></a-asset-item>
-  </a-assets>
 
-    <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;" raycaster="far: ${customFields.libVersion}; objects: .clickable"></a-camera>
+  <a-scene mindar-image="imageTargetSrc: ./targets.mind;" color-space="sRGB"
+    renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false"
+    device-orientation-permission-ui="enabled: false" id="cena1">
+    <a-assets>
+      <a-asset-item id="quest" src="quest/scene.gltf"></a-asset-item>
+    </a-assets>
+
+    <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;"
+      raycaster="far: ${customFields.libVersion}; objects: .clickable"></a-camera>
 
     <!-- window -->
     <a-entity mindar-image-target="targetIndex: 0">
@@ -32,20 +33,16 @@
   </a-scene>
 
   <a-scene mindar-image="imageTargetSrc: ./targets.mind; autoStart: false;" color-space="sRGB"
-  renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false"
-  device-orientation-permission-ui="enabled: false" id="cena2">
+    renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false"
+    device-orientation-permission-ui="enabled: false" id="cena2">
 
-  <a-assets>
-    <a-asset-item id="quest" src="quest/scene.gltf"></a-asset-item>
-  </a-assets>
+    <!-- control -->
+    <a-entity id="control" mindar-image-target="targetIndex: 1" class="hidden">
+      <a-gltf-model id="hint2" scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest"
+        class="clickable" animation-mixer>
+    </a-entity>
 
-  <!-- control -->
-  <a-entity id="control" mindar-image-target="targetIndex: 1" class="hidden">
-    <a-gltf-model id="hint2" scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest"
-      class="clickable" animation-mixer>
-  </a-entity>
-  
-</a-scene>
+  </a-scene>
   <!-- modal -->
   <div id="modalDad">
     <div id="modal">

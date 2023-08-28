@@ -27,7 +27,7 @@
       raycaster="far: ${customFields.libVersion}; objects: .clickable"></a-camera>
 
     <!-- window -->
-    <a-entity mindar-image-target="targetIndex: 0">
+    <a-entity id="entity" mindar-image-target="targetIndex: 0">
       <a-gltf-model id="hintQuestion" scale="0.001 0.001 0.001" position="0 0 0" rotation="0 0 0" src="#quest"
         class="clickable" animation-mixer>
         <a-gltf-model id="finished" scale="0.001 0.001 0.001" position="0 -0.8 0" rotation="0 0 0" src="#penguin"

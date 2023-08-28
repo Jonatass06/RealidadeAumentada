@@ -1,10 +1,9 @@
 
 const modal = document.getElementById("modalDad");
 const audioWin = new Audio("./soundWinner.mp3");
-const count = 0;
+let count = 0;
 const textHint = document.getElementById("textHint");
 textHint.innerText = "Olá seja bem vindo ao nosso caça ao tesouro, comece respirando um pouco!";
-const cena1 = document.getElementById("cena1");
 
 function closeModal() {
  modal.style.display = "none";
@@ -14,7 +13,7 @@ document.getElementById("hint").addEventListener("click", e => {
   modal.style.display = "flex";
 })
 
-document.getElementById("hintQuestion").addEventListener("click", e => {
+document.getElementById("hint").addEventListener("click", e => {
   switch (count){
     case 0:
       textHint.innerText = "Procure o equilíbrio. Ajuste o conforto com as correntes de ar, nem muito frias, tampouco quentes.";
@@ -31,8 +30,8 @@ document.getElementById("hintQuestion").addEventListener("click", e => {
     case 3:
       textHint.innerText = "Siga o caminho da água. Como o ser que sou, adoro frio, odeio o calor, o fogo.";
       document.getElementById("hintQuestion").setAttribute("mindar-image-target", "targetIndex: 6");
-      document.getElementById("hintQuestion").setAttribute("visible", "false");
-      document.getElementById("finished").setAttribute("visible", "true");
+      document.getElementById("hintQuestion").setAttribute("visible", false);
+      document.getElementById("finished").setAttribute("visible", true);
       break;
   }
   modal.style.display = "flex";

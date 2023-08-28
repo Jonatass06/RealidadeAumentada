@@ -13,12 +13,13 @@ document.getElementById("hint").addEventListener("click", e => {
   modal.style.display = "flex";
 })
 
-document.getElementById("hint").addEventListener("click", e => {
+document.getElementById("hintQuestion").addEventListener("click", e => {
   switch (count){
     case 0:
       textHint.innerText = "Procure o equilíbrio. Ajuste o conforto com as correntes de ar, nem muito frias, tampouco quentes.";
       console.log(document.getElementById("entity").getAttribute("mindar-image-target"));
       document.getElementById("entity").setAttribute("mindar-image-target", "targetIndex: 1");
+      console.log(document.getElementById("entity"))
       console.log(document.getElementById("entity").getAttribute("mindar-image-target"));
       break;
     case 1:

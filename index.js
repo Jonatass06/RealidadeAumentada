@@ -1,9 +1,9 @@
 
 const modal = document.getElementById("modalDad");
 const audioWin = new Audio("./soundWinner.mp3");
-let count = 0;
 const textHint = document.getElementById("textHint");
 textHint.innerText = "Olá seja bem vindo ao nosso caça ao tesouro, comece respirando um pouco!";
+const cena1 = document.getElementById("cena1");
 
 function closeModal() {
  modal.style.display = "none";
@@ -13,33 +13,46 @@ document.getElementById("hint").addEventListener("click", e => {
   modal.style.display = "flex";
 })
 
-document.getElementById("hint").addEventListener("click", e => {
-  switch (count){
-    case 0:
-      textHint.innerText = "Procure o equilíbrio. Ajuste o conforto com as correntes de ar, nem muito frias, tampouco quentes.";
-      document.getElementById("entity").setAttribute("mindar-image-target", "'targetIndex: 1'");
-      break;
-    case 1:
-      textHint.innerText = "A chave está na criatividade. Cores traçam pistas invisíveis, guiando você com marcas deixadas em algo branco.";
-      document.getElementById("entity").setAttribute("mindar-image-target", "targetIndex: 2");
-      break;
-    case 2:
-      textHint.innerText = "Desvende mistérios ao desfazer os traços. O poder transcende a superfície, apagando o que foi desenhado";
-      document.getElementById("entity").setAttribute("mindar-image-target", "targetIndex: 5");
-      break;
-    case 3:
-      textHint.innerText = "Siga o caminho da água. Como o ser que sou, adoro frio, odeio o calor, o fogo.";
-      document.getElementById("entity").setAttribute("mindar-image-target", "targetIndex: 6");
-      document.getElementById("hintQuestion").setAttribute("visible", false);
-      document.getElementById("finished").setAttribute("visible", true);
-      break;
-  }
+document.getElementById("hint1").addEventListener("click", e => {
   modal.style.display = "flex";
-  count ++;
+  textHint.innerText = "Procure o equilíbrio. Ajuste o conforto com as correntes de ar, nem muito frias, tampouco quentes.";
+  document.getElementById("hint2").setAttribute("visible", true)
 })
 
-document.getElementById("finished").addEventListener("click", e => {
-  textHint.innerText = "Parabens, você me encontrou!";
-  audioWin.play();
+
+document.getElementById("hint2").addEventListener("click", e => {
+
+  textHint.innerText = "A chave está na criatividade. Cores traçam pistas invisíveis, guiando você com marcas deixadas em algo branco.";
   modal.style.display = "flex";
+
+})
+
+document.getElementById("hint3-a").addEventListener("click", e => {
+  textHint.innerText = "Desvende mistérios ao desfazer os traços. O poder transcende a superfície, apagando o que foi desenhado";
+  modal.style.display = "flex";
+
+})
+document.getElementById("hint3-b").addEventListener("click", e => {
+  textHint.innerText = "Desvende mistérios ao desfazer os traços. O poder transcende a superfície, apagando o que foi desenhado";
+  modal.style.display = "flex";
+})
+document.getElementById("hint3-c").addEventListener("click", e => {
+  textHint.innerText = "Desvende mistérios ao desfazer os traços. O poder transcende a superfície, apagando o que foi desenhado";
+  modal.style.display = "flex";
+})
+
+document.getElementById("hint4").addEventListener("click", e => {
+  textHint.innerText = "Siga o caminho da água. Como o ser que sou, adoro frio, odeio o calor, o fogo.";
+  modal.style.display = "flex";
+})
+
+document.getElementById("finished-a").addEventListener("click", e => {
+  textHint.innerText = "Parabéns! Você me encontrou!";
+  modal.style.display = "flex";
+  audioWin.play();
+})
+document.getElementById("finished-b").addEventListener("click", e => {
+  textHint.innerText = "Parabéns! Você me encontrou!";
+  modal.style.display = "flex";
+  audioWin.play();
 })

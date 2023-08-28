@@ -16,7 +16,7 @@ document.getElementById("hint").addEventListener("click", e => {
 document.getElementById("hint1").addEventListener("click", e => {
   modal.style.display = "flex";
   textHint.innerText = "Procure o equilíbrio. Ajuste o conforto com as correntes de ar, nem muito frias, tampouco quentes.";
-  document.getElementById("hint2").setAttribute("visible", true)
+  document.getElementById("hint2hidden").setAttribute("visible", true)
 })
 
 

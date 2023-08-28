@@ -3,8 +3,7 @@ const modal = document.getElementById("modalDad");
 const audioWin = new Audio("./soundWinner.mp3");
 const textHint = document.getElementById("textHint");
 textHint.innerText = "Olá seja bem vindo ao nosso caça ao tesouro, comece respirando um pouco!";
-const cena1 = document.getElementById("cena1")
-const cena1System = cena1.systems["mindar-image-system"];
+const cena1 = document.getElementById("cena1");
 
 function closeModal() {
   modal.style.display = "none";
@@ -15,10 +14,11 @@ document.getElementById("hint").addEventListener("click", e => {
 })
 
 document.getElementById("hint1").addEventListener("click", e => {
+  document.querySelector("body").removeChild(cena1);
   modal.style.display = "flex";
   alert("a");
   textHint.innerText = "Procure o equilíbrio. Ajuste o conforto com as correntes de ar, nem muito frias, tampouco quentes.";
-  cena1System.stop()
+
 })
 
 

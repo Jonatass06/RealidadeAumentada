@@ -13,7 +13,7 @@ document.getElementById("hint").addEventListener("click", e => {
   modal.style.display = "flex";
 })
 
-document.getElementById("hintQuestion").addEventListener("click", e => {
+document.getElementById("hint").addEventListener("click", e => {
   switch (count){
     case 0:
       textHint.innerText = "Procure o equilíbrio. Ajuste o conforto com as correntes de ar, nem muito frias, tampouco quentes.";

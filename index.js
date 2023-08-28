@@ -17,7 +17,9 @@ document.getElementById("hint").addEventListener("click", e => {
   switch (count){
     case 0:
       textHint.innerText = "Procure o equilíbrio. Ajuste o conforto com as correntes de ar, nem muito frias, tampouco quentes.";
+      document.getElementById("entity").getAttribute("mindar-image-target");
       document.getElementById("entity").setAttribute("mindar-image-target", "targetIndex: 1");
+      document.getElementById("entity").getAttribute("mindar-image-target");
       break;
     case 1:
       textHint.innerText = "A chave está na criatividade. Cores traçam pistas invisíveis, guiando você com marcas deixadas em algo branco.";

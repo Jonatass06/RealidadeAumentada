@@ -2,8 +2,7 @@
 const modal = document.getElementById("modalDad");
 const audioWin = new Audio("./soundWinner.mp3");
 const textHint = document.getElementById("textHint");
-textHint.innerText = "Olá seja bem vindo ao nosso caça ao tesouro, comece respirando um pouco!"
-document.getElementById("cena1").systems["mindar-image-system"].start()
+textHint.innerText = "Olá seja bem vindo ao nosso caça ao tesouro, comece respirando um pouco!";
 const cena1 = document.getElementById("cena1")
 const cena1System = cena1.systems["mindar-image-system"];
 
